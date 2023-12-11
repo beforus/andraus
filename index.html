@@ -194,23 +194,26 @@ os<!DOCTYPE html>
       <div class="container">
 <script>
 window.onload = function(){
-const years = document.querySelector("years");
-const months = document.querySelector("months");
-const days = document.querySelector("days");
-const hours = document.querySelector("hours");
+const years = document.querySelector("#years");
+const months = document.querySelector("#months");
+const days = document.querySelector("#days");
+const hours = document.querySelector("#hours");
 
 today = new Date()
 past = new Date(1979,12,6) 
 var diff = Math.floor(past.getTime() - today.getTime());
 var calc = 1000 * 60 * 60 * 24;
+  
 var day = Math.floor(calc/day);
 var month = Math.floor(days/31);
 var year = Math.floor(months/12);
 var hour = Math.floor(day/60);
+  
   years.setAttribute("data-purecounter-end", "");
   months.setAttribute("data-purecounter-end", "");
   days.setAttribute("data-purecounter-end", "");
   hours.setAttribute("data-purecounter-end", "");
+  
   years.setAttribute("data-purecounter-end", year);
   months.setAttribute("data-purecounter-end", month);
   days.setAttribute("data-purecounter-end", day);
