@@ -192,13 +192,35 @@ os<!DOCTYPE html>
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts  section-bg">
       <div class="container">
+<script>
+window.onload = function(){
+const years = document.querySelector("years");
+const months = document.querySelector("months");
+const days = document.querySelector("days");
+const hours = document.querySelector("hours");
+
+today = new Date()
+past = new Date(1979,12,6) 
+var diff = Math.floor(past.getTime() - today.getTime());
+var calc = 1000 * 60 * 60 * 24;
+var day = Math.floor(calc/day);
+var month = Math.floor(days/31);
+var year = Math.floor(months/12);
+var hour = Math.floor(day/60);
+
+  years.setAttribute("data-purecounter-end", year);
+  months.setAttribute("data-purecounter-end", month);
+  days.setAttribute("data-purecounter-end", day);
+  hours.setAttribute("data-purecounter-end", hour);
+};
+</script>
 
         <div class="row no-gutters">
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <span id="years" data-purecounter-start="0" data-purecounter-end="1999" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Years</strong></p>
             </div>
           </div>
@@ -206,7 +228,7 @@ os<!DOCTYPE html>
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span id="months" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Months</strong></p>
             </div>
           </div>
@@ -214,7 +236,7 @@ os<!DOCTYPE html>
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <span id="days" data-purecounter-start="0" data-purecounter-end="365" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Days</strong></p>
             </div>
           </div>
@@ -222,7 +244,7 @@ os<!DOCTYPE html>
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <span id="hours" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hours</strong> </p>
             </div>
           </div>
