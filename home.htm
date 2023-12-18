@@ -136,8 +136,8 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Religion</a></h4>
-              <p class="description">All True</p>
+              <h4 class="title"><a href=""></a>Louis La'Mor</h4>
+              <p class="description">Favorite Book</p>
             </div>
           </div>
 
@@ -145,7 +145,7 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4 class="title"><a href="">Trucks</a></h4>
-              <p class="description">Favorite Automobile</p>
+              <p class="description">Favorite Car</p>
             </div>
           </div>
 
@@ -168,32 +168,10 @@
       <div class="container">
 <script>
 window.onload = function(){
-const years = document.querySelector("#years");
-const months = document.querySelector("#months");
-const days = document.querySelector("#days");
-const hours = document.querySelector("#hours");
-  years.setAttribute("data-purecounter-end", "");
-  months.setAttribute("data-purecounter-end", "");
-  days.setAttribute("data-purecounter-end", "");
-  hours.setAttribute("data-purecounter-end", "");
-
-today = new Date()
-past = new Date(1979,12,6) 
-var diff = Math.floor(past.getTime() - today.getTime());
-var calc = 1000 * 60 * 60 * 24;
- 
-var day = Math.floor(diff/calc);
-var hour = Math.floor(day/24); 
-var month = Math.floor(day/31);
-var year = Math.floor(month/12);
-
-  
-  
-  
-  years.setAttribute("data-purecounter-end", year);
-  months.setAttribute("data-purecounter-end", month);
-  days.setAttribute("data-purecounter-end", day);
-  hours.setAttribute("data-purecounter-end", hour);
+  document.querySelector('span.years[data-purecounter-end="1"]');
+  document.querySelector('span.days[data-purecounter-end="2"]');
+  document.querySelector('span.months[data-purecounter-end="3"]');
+  document.querySelector('span.hours[data-purecounter-end="4"]');
 };
 </script>
 
@@ -202,7 +180,7 @@ var year = Math.floor(month/12);
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span id="years" data-purecounter-start="0" data-purecounter-end="1999" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-duration="1" class="years purecounter"></span>
               <p><strong>Years</strong></p>
             </div>
           </div>
@@ -210,7 +188,7 @@ var year = Math.floor(month/12);
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span id="months" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-duration="1" class="months purecounter"></span>
               <p><strong>Months</strong></p>
             </div>
           </div>
@@ -218,7 +196,7 @@ var year = Math.floor(month/12);
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span id="days" data-purecounter-start="0" data-purecounter-end="365" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-duration="1" class="days purecounter"></span>
               <p><strong>Days</strong></p>
             </div>
           </div>
@@ -226,7 +204,7 @@ var year = Math.floor(month/12);
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span id="hours" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-duration="1" class="hours purecounter"></span>
               <p><strong>Hours</strong> </p>
             </div>
           </div>
