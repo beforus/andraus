@@ -96,7 +96,7 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-receipt"></i>
                   <h4>Hometown</h4>
-                  <p>San Dimas,California  </p>
+                  <p>San Dimas,California. </p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-cube-alt"></i>
@@ -111,7 +111,7 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bx bx-shield"></i>
                    <h4>Career</h4>
-                  <p>"Broken and unwanted. I remember when we took it in." said the CEO of SYSTEM Et AL. Andreas history of being involved in charties and foundations started at a yound age. He also served as Vice President of Kingsley Companies and Jackson Manufacturing.</p>                </div>
+                  <p>Chula Vista, his first company, he started when he was 8 years old. Today he's now the lead architech at the SYSTEM Et AL.  He also served as Vice President of Kingsley Companies and Jackson Manufacturing.</p>                </div>
               </div>
             </div><!-- End .content-->
           </div>
@@ -120,53 +120,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>System</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Change</a></h4>
-              <p class="description">Coming soon.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Getting the job done.</a></h4>
-              <p class="description">Coming soon.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Thou eyes write love letters.</a></h4>
-              <p class="description">Coming soon.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">Coming soon.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
+ 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts  section-bg">
       <div class="container">
@@ -176,6 +130,10 @@ const years = document.querySelector("#years");
 const months = document.querySelector("#months");
 const days = document.querySelector("#days");
 const hours = document.querySelector("#hours");
+  years.setAttribute("data-purecounter-end", "");
+  months.setAttribute("data-purecounter-end", "");
+  days.setAttribute("data-purecounter-end", "");
+  hours.setAttribute("data-purecounter-end", "");
 
 today = new Date()
 past = new Date(1979,12,6) 
@@ -188,10 +146,7 @@ var month = Math.floor(day/31);
 var year = Math.floor(month/12);
 
   
-  years.setAttribute("data-purecounter-end", "");
-  months.setAttribute("data-purecounter-end", "");
-  days.setAttribute("data-purecounter-end", "");
-  hours.setAttribute("data-purecounter-end", "");
+  
   
   years.setAttribute("data-purecounter-end", year);
   months.setAttribute("data-purecounter-end", month);
